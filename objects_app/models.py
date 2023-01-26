@@ -8,7 +8,7 @@ class Item(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     description = models.CharField(max_length=255)
     name = models.CharField(max_length=30)
-    price = models.DecimalField(decimal_places=True, max_digits=2)
+    price = models.DecimalField(decimal_places=True, max_digits=10)
 
     class Meta:
         verbose_name = 'Item'
