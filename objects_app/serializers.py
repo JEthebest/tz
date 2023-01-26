@@ -8,6 +8,7 @@ class ItemSerializer(serializers.ModelSerializer):
         model = Item
         fields = (
             'id',
+            'user',
             'name',
             'description',
             'price'
