@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'tzbin',
         'USER': 'menisko',
         'PASSWORD': 'iskotzbin',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     },
 }
