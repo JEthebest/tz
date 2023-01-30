@@ -10,7 +10,7 @@ from rest_framework import status
 
 from django.http import Http404
 
-class ItemsListView(APIView):
+class ItemListView(APIView):
     def get(self,request,format = None):
         snippets = Item.objects.all()
         serializer =ItemSerializer(snippets ,many = True)
@@ -23,7 +23,7 @@ class ItemsListView(APIView):
             return Response(serializer.data,status = status.HTTP_201_CREATED)
         return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
-class ItemsDetailView(APIView):
+class ItemDetailView(APIView):
     def get_object(self,pk):
         try:
             return Item.objects.get(pk=pk)
