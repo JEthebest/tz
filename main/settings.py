@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'profile_app.User'
+AUTH_USER_MODEL = "profile_app.User"
 # Application definition
 
 INSTALLED_APPS = [
